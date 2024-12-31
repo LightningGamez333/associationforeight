@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.animated-button {
+    background-color: #e63946; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #d62839; /* Darker red on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.whiteboard-area {
+    margin-top: 20px; /* Space between the main button and whiteboard area */
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+#whiteboard {
+    border: 2px solid #ffffff; /* White border for the canvas */
+}
+
+input[type="text"] {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #ffffff; /* White text */
+}
+
+input[type="color"] {
+    margin: 0 5px;
+}
+
+select {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #333; /* Dark select background */
+    color: #ffffff; /* White text */
+}
+
+button {
+    margin: 0 5px;
+}
